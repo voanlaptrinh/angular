@@ -1,0 +1,32 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<div class="effect">
+    <h1>Làm Quizz Mới Nhất</h1>
+</div>
+<div class="container">
+    <div class="box-container">
+
+        <div class="box" *ngFor="let item of Subjects">
+            <div class="image">
+                <a [routerLink]="'/quiz/' + item.Code"> <img [src]="'/assets/logos/' + item.Logo" width="100px"
+                        alt=""></a>
+            </div>
+            <div class="content">
+                <a class="link-success" [routerLink]="'/quiz/'+ item.Code ">
+                    <p>{{item.Name}}</p>
+                </a>
+                <a [routerLink]="'/quiz/' + item.Code" class="btn">Làm quiz</a>
+                <div class="icons">
+                    <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                    <span> <i class="fas fa-user"></i> by admin </span>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+   

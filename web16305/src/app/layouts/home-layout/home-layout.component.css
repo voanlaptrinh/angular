@@ -1,0 +1,75 @@
+.btn-toolbar {
+    margin: 20px;
+}
+.nav-item{
+    margin-top: -25px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.navbar{
+    margin-left: 35px;
+}
+
+.navbar-brand {
+    color: #00FFFF;
+    font-size: 58px;
+    margin-top: -20px;
+   
+}
+.navbar-brand:hover{
+    color: darkblue;
+}
+
+.navbar-nav {
+ 
+    margin-left: -30px;
+    margin-right: 30px;
+}
+
+.form-control {
+   
+    height: 40px;
+}
+.admin{
+    margin-left: -240px;
+}
+
+
+.btn-outline-primary {
+    height: 40px;
+}
+
+.flex-fill2 {
+    width: 160px;
+}
+
+.flex-column {
+    margin-right: 20px;
+    padding-top: 50px;
+}
+
+footer {
+    margin-top: 20px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+ }
+ /* Với các item đổ xuống, chúng ta cho ẩn đi bằng display block */
+ 
+ /*sub-menu*/
+ .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    z-index: 1;
+    list-style: none;
+   margin-left: -70px;
+   width: 130px;
+ }
+ /* Khi hover vào sẽ hiện ra khi set thuộc tính display: block */
+ 
+ .dropdown:hover .dropdown-content{
+    display: block;
+  
+ }

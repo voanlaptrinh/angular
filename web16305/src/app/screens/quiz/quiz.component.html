@@ -1,0 +1,21 @@
+<div class="effect">
+    <h1>Chúc bạn làm bài thành công ☺</h1>
+</div>
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button (click)="submitExcercise()" class="btn btn-success me-md-2 mb-3">Nộp bài</button>
+</div>
+
+
+<div class="container mt-sm-5 my-1">
+    <div class="question ml-sm-5 pl-sm-5 pt-2">
+        <div *ngFor="let q of lstQuestions; index as i">
+        <div class="py-2 h5" ><b>Câu hỏi {{i+1}}: {{q.Text}}</b>
+            <div *ngFor="let an of q.Answers" class="ml-md-3 ml-sm-3 pl-md-5 pt-sm-0 pt-3" id="options">
+                <label class="options"  for="anw_{{an.Id}}">{{an.Text}}<input  (change)="selectAnswer(q.Id, an.Id)" id="anw_{{an.Id}}" type="radio"
+                                    [name]="q.Id" [value]="an.Id"> <span
+                        class="checkmark"></span> </label>
+            </div>
+            <hr>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,31 @@
+<div class="page">
+   
+    <div id="nav-container">
+        
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+            <ul>
+                <li><a [routerLink]="'admin-mon'">Quiz</a></li>
+                <li><a [routerLink]="'admin-quiz'">Câu hỏi</a></li>
+                <li><a [routerLink]="'adminLogin'">Tài khoản</a></li>
+                <li class="small"><a href="#">Trang chủ</a><a href="instagram.com">Instagram</a></li>
+            </ul>
+            <hr>
+        </div>
+        
+    </div>
+    <main>
+        
+        <div class="contai">
+            
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </main>
+</div>

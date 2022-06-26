@@ -1,0 +1,24 @@
+pipe => tính năng để giúp format lại giá trị hiển thị cho dữ liệu
+có thể tự tạo ra pipe mới để sử dụng trong dự án
+ng g pipe tên-pipe
+
+câu lệnh để tạo ra component:
+ng g component tên-component
+
+khi thực hiện bấm nút xóa ở component con (hero-item)
+=> 1. gửi request lên server và xóa bản ghi khỏi csdl
+=> 2. thông báo cho component cha (app component) loại bỏ phần tử vừa
+bị xóa khỏi mảng heroes
+@Input : tạo ra 1 thuộc tính của component con nhằm mục đích nhận dữ liệu từ
+component cha
+@Output: tạo ra 1 sự kiện cho component con nhằm mục đích gửi dữ liệu
+từ component con => component cha (event emit)
+
+câu lệnh để sinh ra sevice ng g s service/student
+ng g c component/hero-form --skip-tests
+
+
+định nghĩa một sự kiện cho một thẻ có bao nhiu cách
+pipe là gì có mấy loại pipe?
+service là j?
+Directives là gì? có mấy loại Directives?

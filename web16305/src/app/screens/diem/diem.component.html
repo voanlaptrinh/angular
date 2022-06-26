@@ -1,0 +1,70 @@
+<!-- <table class="table table-success table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Họ tên</th>
+            <th scope="col">Mã môn</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of Diem ">
+        <tr>
+            <td scope="row"> {{item.name}}:</td>
+            <div *ngFor="let i of item.marks">
+                
+                <div *ngIf="Code == i.subject">
+                    <td> {{i.subject}}:</td>
+                </div>
+
+                <div *ngIf="Code == i.subject">
+                    <td>{{i.score}}</td>
+                </div>
+               
+
+            </div>
+
+        </tr> -->
+
+
+
+
+<!-- </tbody>
+</table> -->
+<!-- <img [src]="item.avatar" width="60" alt=""> -->
+<!-- <div class="" >
+        <div class="" *ngIf="Code == i.subject">
+            {{i.subject}}:  {{i.score}}
+            
+        </div>
+    </div> -->
+
+
+<div class="container mt-5">
+    <div class="height-100 row d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+            <div class="p-3 bg-white rounded">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="position-relative"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPobJJqh3ljxCxbHc_V_BJfsa9TP_UqcKGEQ&usqp=CAU" width="80"
+                                class="rounded-circle"> <span class="position-absolute dots"></span> </div>
+                        <div class="ml-2" *ngFor="let item of Diem ">
+                            <div *ngFor="let i of item.marks">
+                                <div *ngIf="Code == i.subject">
+                                    <h5 class="mb-0 fs-3" >{{item.name}}</h5> <span></span>
+                                    <div class="d-flex flex-row">
+                                        <span class="mr-3">Mã môn: {{i.subject}}</span>
+                                        
+                                    </div>
+                                    <div class="d-flex flex-row fw-bold fs-5">Điểm: <span class="mr-3 fs-5" style="color: red;">{{i.score}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                         <span class="box-pensil"><i class="fa fa-pencil"></i></span> </div>
+                    <div> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

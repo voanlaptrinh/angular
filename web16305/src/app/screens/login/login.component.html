@@ -1,0 +1,31 @@
+<section class="vh-100">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <div class="container-fluid">
+        <div class="col-6 offset-3">
+
+        </div>
+    </div>
+</section>
+<div class="login-box">
+    <h2>Login</h2>
+    <form>
+        <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+        </div>
+        <a (click)="googleLogin()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> Submit
+        </a>
+
+    </form>
+    <button (click)="googleLogin()" class="btn btn-success button-login-google">
+        Đăng nhập bằng google
+    </button>
+</div>
